@@ -53,7 +53,6 @@ class Dectector:
                     cv2.line(image,(x+w,y),(x+w,y+lineWidth),classColor,thickness=5)
                     cv2.line(image,(x,y+h),(x+lineWidth,y+h),classColor,thickness=5)
                     cv2.line(image,(x,y+h),(x,y+h-lineWidth),classColor,thickness=5)
-                    ########################
                     cv2.line(image,(x+w,y+h),(x+w-lineWidth,y+h),classColor,thickness=5)
                     cv2.line(image,(x+w,y+h),(x+w,y+h-lineWidth),classColor,thickness=5)
             cv2.putText(image,'FPS: '+ str(int(fps)),(20,70),cv2.FONT_HERSHEY_PLAIN,2,(0,225,0),2)
